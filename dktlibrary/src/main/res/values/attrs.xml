@@ -1,0 +1,23 @@
+<resources>
+
+
+  <declare-styleable name="TemplateView">
+    <attr name="gnt_template_type" format="reference"/>
+  </declare-styleable>
+
+  <declare-styleable name="Rotate3dAnimation">
+    <attr name="rollType" format="enum">
+      <enum name="x" value="0"/>
+      <enum name="y" value="1"/>
+      <enum name="z" value="2"/>
+    </attr>
+    <attr name="fromDeg" format="float" />
+    <attr name="toDeg" format="float" />
+    <attr name="customPivotX" format="fraction"/>
+    <attr name="customPivotY" format="fraction" />
+  </declare-styleable>
+
+  <attr name="sweet_alert_bg_drawable" format="reference" />
+  <attr name="sweet_alert_title_text_color" format="color|reference" />
+  <attr name="sweet_alert_content_text_color" format="color|reference" />
+</resources>

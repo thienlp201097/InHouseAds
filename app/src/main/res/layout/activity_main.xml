@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:paddingBottom="@dimen/_10sdp"
+        android:layout_width="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_height="0dp"
+        android:layout_above="@+id/banner_container">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/ln1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <Button
+                    android:id="@+id/btn_load_inter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="load inter" />
+
+                <Button
+                    android:id="@+id/btn_show_inter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:text="show inter" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/ln2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ln1"
+                android:gravity="center"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toBottomOf="@id/ln1">
+
+                <Button
+                    android:id="@+id/btn_load_inter_app_lovin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="load inter Max" />
+
+                <Button
+                    android:id="@+id/btn_show_inter_app_lovin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:text="show inter Max" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/ln3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ln2"
+                android:gravity="center"
+                app:layout_constraintTop_toBottomOf="@id/ln2">
+
+                <Button
+                    android:id="@+id/load_native"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/btn_show_reward"
+                    android:layout_centerHorizontal="true"
+                    android:text="load native" />
+
+                <Button
+                    android:id="@+id/show_native"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/load_native"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginStart="20dp"
+                    android:text="show native" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/ln4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ln3"
+                android:gravity="center"
+                app:layout_constraintTop_toBottomOf="@id/ln3">
+
+                <Button
+                    android:id="@+id/load_native_max"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/btn_show_reward"
+                    android:layout_centerHorizontal="true"
+                    android:text="load native Max" />
+
+                <Button
+                    android:id="@+id/show_native_max"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/load_native"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginStart="20dp"
+                    android:text="show native Max" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/ln5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ln4"
+                android:gravity="center"
+                app:layout_constraintTop_toBottomOf="@+id/ln4">
+
+                <Button
+                    android:id="@+id/load_banner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/btn_show_reward"
+                    android:layout_centerHorizontal="true"
+                    android:text="banner Admob" />
+
+                <Button
+                    android:id="@+id/banner_max"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/load_native"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginStart="20dp"
+                    android:text="banner Max" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/ln6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ln4"
+                android:gravity="center"
+                app:layout_constraintTop_toBottomOf="@+id/ln5">
+
+                <Button
+                    android:id="@+id/load_reward"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/btn_show_reward"
+                    android:layout_centerHorizontal="true"
+                    android:text="Load Reward" />
+
+                <Button
+                    android:id="@+id/show_reward"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/load_native"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginStart="20dp"
+                    android:text="Show Reward" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+            <Button
+                android:id="@+id/btn_load_show_inter_callback2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="load and show intersitial"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ln6" />
+
+            <Button
+                android:id="@+id/btn_load_show_inter_admob"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="load and show intersitial admob"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btn_load_show_inter_callback2" />
+
+
+            <Button
+                android:id="@+id/btn_show_reward"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="load and show reward"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/btn_load_show_inter_admob" />
+
+            <Button
+                android:id="@+id/btn_show_native"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btn_show_reward"
+                android:layout_centerHorizontal="true"
+                android:text="load and show native"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/btn_show_reward" />
+
+            <Button
+                android:id="@+id/loadAndShowNativeAdmob"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btn_show_reward"
+                android:layout_centerHorizontal="true"
+                android:text="las native admob"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/btn_show_native" />
+
+            <FrameLayout
+                android:id="@+id/nativead"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_below="@id/btn_show_native"
+                android:minHeight="300dp"
+                app:layout_constraintTop_toBottomOf="@id/loadAndShowNativeAdmob" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <FrameLayout
+        android:id="@+id/banner_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:minHeight="50dp" />
+
+</RelativeLayout>
