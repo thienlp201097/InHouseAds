@@ -47,9 +47,6 @@ dependencies {
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
-    testImplementation(libs.junit)
-    androidTestImplementation(libs.androidx.junit)
-    androidTestImplementation(libs.androidx.espresso.core)
 
     implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.5.1")
     implementation("androidx.lifecycle:lifecycle-process:2.5.1")
@@ -63,7 +60,7 @@ dependencies {
 
     // Ads
     implementation("com.applovin:applovin-sdk:+")
-    implementation("com.google.android.gms:play-services-ads:23.1.0")
+    implementation("com.google.android.gms:play-services-ads:+")
     implementation("com.intuit.sdp:sdp-android:1.1.1")
 
     // Other
